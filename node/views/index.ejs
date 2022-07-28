@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>FullCycle - Desafion Nginx NodeJs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Full Cycle Rocks!</h1>
+    <br />
+    <strong>Lista de nomes cadastrados</strong>
+    <br />
+    <ul>
+        <% results.forEach(function(people) { %>
+            <li>
+               <p>
+                  <%=people.id%>
+                  <%=people.name%>
+               </p> 
+             </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
